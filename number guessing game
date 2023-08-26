@@ -1,0 +1,42 @@
+//THIS  IS  THE  NUMBER  GUESSSING  GAME//
+
+#include<cstdlib>
+#include<time.h>
+#include<iostream>
+using namespace std;
+int main()
+
+{
+
+   srand(time(0));
+   int number;
+   number=rand() % 1000 +1;
+   int guess;
+
+   do{
+
+    cout<<"enter your number:";
+    cin>>guess;
+   
+
+    if(guess<number)
+    {
+        cout<<"your guessing number is less,than the actuall number"<<endl;
+        
+    }
+    else if(guess>number)
+    {
+        cout<<"your guessing number is more , than the  actuall number"<<endl;
+
+    }
+    else{
+        cout<<"your guessing number is right"<<endl;
+
+    }}
+    while
+    (guess!=number);
+    system("pause");
+    
+   return 0;
+
+}
